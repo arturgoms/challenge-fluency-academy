@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  server:
+    env_file:
+      - .env
+    image: python:3.7
+    working_dir: /mnt
+    volumes:
+      - .:/mnt
+    ports:
+      - 5300:5300
+    command: python src/dns-server.py

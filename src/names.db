@@ -1,0 +1,8 @@
+*			A       127.0.0.1
+test.nonexistenttld	A	1.1.1.1
+*.example.com		A	2.2.2.2
+c1.example.com		CNAME	c2.example.com
+c2.example.com		CNAME	c3.example.com
+c3.example.com		CNAME	google.example.com
+google.example.com	CNAME	google.com
+test.example.com	A	8.8.8.8	
