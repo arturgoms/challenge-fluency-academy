@@ -145,6 +145,10 @@ def printOut(peer,qType,query,response):
     p.write(printData+'\n')
     p.close()
 
+class query(Event):
+
+    """query Event"""
+
 
 class DNS(Component):
 
