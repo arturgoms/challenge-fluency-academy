@@ -12,7 +12,7 @@ This challenge is to Design and implement a simple subset of a Domain Name Syste
 The code for this project is in my [git](https://git.arturgomes.com.br/arturgomes/teste-tecnico---fluency-academy).  
 So, you will need to:
 
-    - Clone the repo, git clone https://git.arturgomes.com.br/arturgomes/teste-tecnico---fluency-academy.git
+    - Clone the repo, git clone https://github.com/arturgoms/fluency-academy.git
     - Make sure that you have docker and docker-compose installed on your system
     - To create the dockers and install all dependencies inside the folder run: sudo make server.install
     - To run just type: sudo make server.daemon
@@ -31,3 +31,5 @@ So, you will need to:
 ### Logs:
 
     - Server log: tail -f dns-server.log
+    
+### Self-hosted git with my other projects [here](https://git.arturgomes.com.br/arturgomes/)
