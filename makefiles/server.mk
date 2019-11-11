@@ -2,7 +2,7 @@
 
 # Install will build a docker with all the requirements for the project be able to run
 server.install:
-	docker-compose run --publish=5300:5300/udp --rm server pip install -r requirements.txt --user --upgrade --no-warn-script-location 
+	docker-compose run -p=5300:5300/udp --rm server pip install -r requirements.txt --user --upgrade --no-warn-script-location 
 
 # Start will start the container up
 server.start:
@@ -27,3 +27,7 @@ server.logs:
 # Upgrade will upgrade the modules on the container, used when another module is added to the project
 server.upgrade:
 	docker-compose run --rm server bash -c "python vendor/bin/pip-upgrade requirements.txt  --skip-virtualenv-check"
+
+# Test the server
+server.test:
+	docker-compose up --scale app=2 test-server  test-dns

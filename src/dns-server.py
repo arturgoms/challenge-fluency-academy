@@ -21,6 +21,9 @@ serverIP = '0.0.0.0'
 logFile = './dns-server.log'
 PORT = 5300
 
+if '--test' in sys.argv[1:]:
+   hostFile = rootPath + '/../test/test_names.db'
+
 try:
    open(logFile,'w').close()
 except:
