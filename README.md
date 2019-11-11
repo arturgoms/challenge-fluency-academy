@@ -30,4 +30,4 @@ So, you will need to:
 
 ### Logs:
 
-    - Server log: tail -f server.log
+    - Server log: tail -f dns-server.log
