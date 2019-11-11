@@ -2,7 +2,7 @@
 
 # Install will build a docker with all the requirements for the project be able to run
 server.install:
-	docker-compose run -p=5300:5300/udp --rm server pip install -r requirements.txt --user --upgrade --no-warn-script-location 
+	docker-compose run --publish=5300:5300/udp --rm server pip install -r requirements.txt --user --upgrade --no-warn-script-location 
 
 # Start will start the container up
 server.start:
